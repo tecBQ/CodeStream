@@ -1,0 +1,13 @@
+.header{
+  background: black;
+}
+.header .menu{
+  list-style: none;
+}
+.header .menu .item{
+  color:white;
+  display: inline-block !important;
+  padding: 10px 20px;
+  font-weight: bold !important;
+}
+
