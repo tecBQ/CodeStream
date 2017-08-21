@@ -1,0 +1,12 @@
+<div>
+  <div class="tab-selection">
+    <app-tab-selector [active]="isSelect(1)" (click)="setTab(1)">HTML</app-tab-selector>
+    <app-tab-selector [active]="isSelect(2)" (click)="setTab(2)">CSS</app-tab-selector>
+    <app-tab-selector [active]="isSelect(3)" (click)="setTab(3)">JAVASCRIPT</app-tab-selector>
+  </div>
+  <div [ngSwitch]="tab">
+    <app-tab-content *ngSwitchCase="1" (result)="ChangeEditor($event)" [text]="html"></app-tab-content>
+    <app-tab-content *ngSwitchCase="2" (result)="ChangeEditor($event)" [text]="css"></app-tab-content>
+    <app-tab-content *ngSwitchCase="3" (result)="ChangeEditor($event)" [text]="javacript"></app-tab-content>
+  </div>
+</div>

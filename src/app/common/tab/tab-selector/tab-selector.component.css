@@ -1,0 +1,14 @@
+:host{
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper{
+  padding: 10px;
+  background: floralwhite;
+}
+.unselected{
+  user-select: none;
+}
+.active{
+  background: gray;
+}
